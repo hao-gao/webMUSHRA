@@ -11,7 +11,7 @@ pages:
       id: first_page
       name: Welcome
       content: The next pages present a few ideas about how to design a training page.
-    - type: volume
+    - type: volume2
       id: page2
       name: volume2
       content: The next pages present volume.

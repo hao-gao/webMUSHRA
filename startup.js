@@ -100,6 +100,9 @@ function addPagesToPageManager(_pageManager, _pages) {
       } else if (pageConfig.type == "likert_multi_stimulus") {
         var likertMultiStimulusPage = new LikertMultiStimulusPage(pageManager, pageTemplateRenderer, pageConfig, audioContext, config.bufferSize, audioFileLoader, session, errorHandler, config.language);
         _pageManager.addPage(likertMultiStimulusPage);
+      } else if (pageConfig.type == "volume2") {
+        var volume2Page = new Volume2Page(_pageManager, audioContext, audioFileLoader, pageConfig, config.bufferSize, errorHandler, config.language);
+        _pageManager.addPage(volume2Page);
       } else if (pageConfig.type == "finish") {
         var finishPage = new FinishPage(_pageManager, session, dataSender, pageConfig, config.language);
         _pageManager.addPage(finishPage);
