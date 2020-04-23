@@ -1,5 +1,5 @@
-testname: webMUSHRA Example
-testId: training_example
+testname: Listening Tests
+testId: test_example
 bufferSize: 2048
 stopOnErrors: true
 showButtonPreviousPage: true
@@ -8,9 +8,9 @@ remoteService: service/write.php
 
 pages:
     - type: mushra2
-      id: page3
-      name: Training No.3
-      content: This MUSHRA page does not randomize the conditions. Furthermore, the conditions names are not hidden. 
+      id: page1
+      name: Test No.1
+      content: test 
       showWaveform: true
       enableLooping: true 
       reference: configs/resources/audio/WN.wav
@@ -20,49 +20,19 @@ pages:
       addReference: false
       randomize: true
       showConditionNames: true
-      #myCof: [1,2,3,4.02354]
-      #stimuli:
-      #    C1: configs/resources/audio/WN.wav
-      #    C2: configs/resources/audio/WN.wav
-      #    C3: configs/resources/audio/WN.wav   
-    - type: generic
-      id: first_page
-      name: Welcome
-      content: The next pages present a few ideas about how to design a training page.
-    - type: volume2
+    - type: mushra2
       id: page2
-      name: volume2
-      content: The next pages present volume.
-      stimulus: configs/resources/audio/WN.wav
-      defaultVolume: 1.0
-    - type: paired_comparison
-      id: trialAB2
-      name: Mono Trial AB
-      unforced: I don't know
-      content: test description AB
-      showWaveform: false
+      name: Test No.2
+      content: test 
+      showWaveform: true
       enableLooping: true 
-      reference: configs/resources/audio/mono_ref.wav
-      stimuli:
-          C1: configs/resources/audio/mono_c1.wav
-          C2: configs/resources/audio/mono_c2.wav
-          C3: configs/resources/audio/mono_c3.wav
-    - type: generic
-      id: training_1
-      name: Training No.1
-      content: Please listen to each of the music excerpts:<br/><audio controls><source src='configs/resources/audio/mono_c1.wav' type='audio/wav'></audio><br/><audio controls><source src='configs/resources/audio/mono_c2.wav' type='audio/wav'></audio><br/><audio controls><source src='configs/resources/audio/mono_c3.wav' type='audio/wav'></audio><br/>
-    - type: likert_multi_stimulus
-      id: training_2
-      name: Training No.2
-      content: test description
-      mustRate: true
-      stimuli:
-          C1: configs/resources/audio/WN.wav
-          C2: configs/resources/audio/mono_c2.wav
-          C3: configs/resources/audio/mono_c3.wav
-      response:
-        - value: listened
-          label: I listened to this item
+      reference: configs/resources/audio/WN.wav
+      createAnchor35: false
+      createAnchor70: false
+      createAnchor000: 4
+      addReference: false
+      randomize: true
+      showConditionNames: false
     - type: mushra
       id: training_3
       name: Training No.3
@@ -77,8 +47,7 @@ pages:
       stimuli:
           C1: configs/resources/audio/mono_c1.wav
           C2: configs/resources/audio/mono_c2.wav
-          C3: configs/resources/audio/mono_c3.wav             
-
+          C3: configs/resources/audio/mono_c3.wav  
     - type: finish
       name: Thank you
       content: Thank you for attending!
