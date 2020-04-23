@@ -103,6 +103,9 @@ function addPagesToPageManager(_pageManager, _pages) {
       } else if (pageConfig.type == "volume2") {
         var volume2Page = new Volume2Page(_pageManager, audioContext, audioFileLoader, pageConfig, config.bufferSize, errorHandler, config.language);
         _pageManager.addPage(volume2Page);
+      } else if (pageConfig.type == "mushra2") {
+        var mushra2Page = new Mushra2Page(_pageManager, audioContext, config.bufferSize, audioFileLoader, session, pageConfig, mushraValidator, errorHandler, config.language);
+        _pageManager.addPage(mushra2Page);
       } else if (pageConfig.type == "finish") {
         var finishPage = new FinishPage(_pageManager, session, dataSender, pageConfig, config.language);
         _pageManager.addPage(finishPage);

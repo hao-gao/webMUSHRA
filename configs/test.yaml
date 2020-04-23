@@ -7,6 +7,24 @@ remoteService: service/write.php
 
 
 pages:
+    - type: mushra2
+      id: page3
+      name: Training No.3
+      content: This MUSHRA page does not randomize the conditions. Furthermore, the conditions names are not hidden. 
+      showWaveform: true
+      enableLooping: true 
+      reference: configs/resources/audio/WN.wav
+      createAnchor35: false
+      createAnchor70: false
+      createAnchor000: 4
+      addReference: false
+      randomize: true
+      showConditionNames: true
+      #myCof: [1,2,3,4.02354]
+      #stimuli:
+      #    C1: configs/resources/audio/WN.wav
+      #    C2: configs/resources/audio/WN.wav
+      #    C3: configs/resources/audio/WN.wav   
     - type: generic
       id: first_page
       name: Welcome
@@ -16,6 +34,7 @@ pages:
       name: volume2
       content: The next pages present volume.
       stimulus: configs/resources/audio/WN.wav
+      defaultVolume: 1.0
     - type: paired_comparison
       id: trialAB2
       name: Mono Trial AB
