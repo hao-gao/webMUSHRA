@@ -31,9 +31,9 @@ pages:
       content: The next pages present a few ideas about how to design a training page.
     - type: volume2
       id: page2
-      name: volume2
-      content: The next pages present volume.
-      stimulus: configs/resources/audio/WN.wav
+      name: Haas
+      content: This pages present Haas effort.
+      stimulus: configs/resources/audio/man2.wav
       defaultVolume: 1.0
     - type: paired_comparison
       id: trialAB2
