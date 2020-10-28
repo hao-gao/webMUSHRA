@@ -31,7 +31,62 @@ pages:
           ch2: configs/resources/audio/man.wav
           ch3: configs/resources/audio/man.wav   
           ch4: configs/resources/audio/man.wav  
-
+      questionnaire:
+          - type: likert
+            name: 饱满程度
+            label: 饱满程度
+            response:
+              - value: 饱满的
+                label: 饱满的
+              - value: 单薄的
+                label: 单薄的
+          - type: likert
+            name: 明亮程度
+            label: 明亮程度
+            response:
+              - value: 平衡的
+                label: 平衡的
+              - value: 刺耳的
+                label: 刺耳的
+              - value: 暗淡的
+                label: 暗淡的
+    - type: mushra
+      id: training_2
+      name: Training No.2
+      content: This MUSHRA page does not randomize the conditions. Furthermore, the conditions names are not hidden. 
+      showWaveform: true
+      enableLooping: true 
+      reference: configs/resources/audio/man.wav
+      randomize: false
+      showConditionNames: true
+      defaultVolume1: 1.0
+      defaultVolume2: 0.1
+      defaultVolume3: 1.0
+      defaultVolume4: 1.0
+      stimuli:
+          ch1: configs/resources/audio/man.wav
+          ch2: configs/resources/audio/man.wav
+          ch3: configs/resources/audio/man.wav   
+          ch4: configs/resources/audio/man.wav  
+      questionnaire:
+          - type: likert
+            name: 饱满程度
+            label: 饱满程度
+            response:
+              - value: 饱满的
+                label: 饱满的
+              - value: 单薄的
+                label: 单薄的
+          - type: likert
+            name: 明亮程度
+            label: 明亮程度
+            response:
+              - value: 平衡的
+                label: 平衡的
+              - value: 刺耳的
+                label: 刺耳的
+              - value: 暗淡的
+                label: 暗淡的
     - type: finish
       name: Thank you
       content: Thank you for attending!
@@ -51,9 +106,9 @@ pages:
             name: gender
             label: Gender
             response:
-             - value: female
-               label: Female
-             - value: male
-               label: Male
-             - value: other
-               label: Other
+              - value: female
+                label: Female
+              - value: male
+                label: Male
+              - value: other
+                label: Other
