@@ -42,7 +42,7 @@ $input = array("session_test_id");
 for($i =0; $i < $length; $i++){
 	array_push($input, $session->participant->name[$i]);
 }
-array_push($input, "trial_id", "rating_stimulus", "rating_score", "rating_time", "rating_comment");
+array_push($input, "trial_id", "rating_stimulus", "rating_score", "rating_time", "rating_comment", "likert");
 array_push($mushraCsvData, $input);
 
  
@@ -58,7 +58,7 @@ array_push($mushraCsvData, $input);
 		for($i =0; $i < $length; $i++){
 			array_push($results, $session->participant->response[$i]);
 		}  
-		array_push($results, $trial->id, $response->stimulus, $response->score, $response->time, $response->comment); 
+		array_push($results, $trial->id, $response->stimulus, $response->score, $response->time, $response->comment, $response->likert); 
 	  
 	  	array_push($mushraCsvData, $results);
 	  	
