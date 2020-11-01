@@ -75,6 +75,11 @@ function addPagesToPageManager(_pageManager, _pages) {
       addPagesToPageManager(_pageManager, _pages[i]);
     } else {
       var pageConfig = _pages[i];
+      if (pageConfig.type == "test"){
+        pageConfig.type = "mushra";
+        pageConfig.stimuli = {"ch1":pageConfig.reference, "ch2":pageConfig.reference, "ch3":pageConfig.reference, "ch4":pageConfig.reference};
+        pageConfig.randomize = false;
+      }
       if (pageConfig.type == "generic") {
         _pageManager.addPage(new GenericPage(_pageManager, pageConfig));
       } else if (pageConfig.type == "volume") {
@@ -229,7 +234,7 @@ var configFile = '';
 if (configArg) {
   configFile = 'configs/' + configArg;
 } else {
-  configFile = 'configs/test2.yaml';
+  configFile = 'configs/default.yaml';
 }
 
 

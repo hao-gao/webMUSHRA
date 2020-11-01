@@ -71,7 +71,7 @@ array_push($mushraCsvData, $input);
 }
 		
 if ($write_mushra) {
-	$filename = $filepathPrefix."mushra".$filepathPostfix;
+	$filename = $filepathPrefix."test".$filepathPostfix;
 	$isFile = is_file($filename);
 	$fp = fopen($filename, 'a');
 	foreach ($mushraCsvData as $row) {
