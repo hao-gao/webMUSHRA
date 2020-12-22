@@ -8,8 +8,14 @@ remoteService: service/write.php
 
 pages: 
     - type: volume2
+      id: page1
+      name: " "
+      content: " "
+      stimulus: configs/resources/audio/Tom.wav
+      defaultVolume: 1.0
+    - type: volume2
       id: page2
       name: " "
       content: " "
-      stimulus: configs/resources/audio/man2.wav
+      stimulus: configs/resources/audio/man.wav
       defaultVolume: 1.0

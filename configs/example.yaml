@@ -17,7 +17,7 @@ pages:  # 每个“-”后的内容代表一页
       content: 评分并选择标签。 # 该值是提示文本，显示在窗口上方
       showWaveform: true  # 如果该值为true，则会显示音频文件的波形
       enableLooping: true 
-      reference: configs/resources/audio/man.wav  # 该值是本页测试中使用的音频文件的相对路径
+      reference: configs/resources/audio/Tom.wav  # 该值是本页测试中使用的音频文件的相对路径
       defaultVolume1: 1.0  # 通道1默认音量（0~1）
       defaultVolume2: 0.1  # 通道2默认音量
       defaultVolume3: 1.0  # 通道3默认音量
